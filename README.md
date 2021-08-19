@@ -2,8 +2,12 @@
 Small utility scirpt to allocate subnets into instances
 # How to use
 It can be used as a standalone script or to be imported into other script as a class
-
-Sample input format in json:
+## Setup
+Make sure you have prerequisite packages
+```bash
+python3 -m pip install -r requirements.txt
+```
+## Sample input
 ```json
 {
     "subnets": {
