@@ -9,27 +9,27 @@ Sample input format in json:
     "subnets": {
         "subnet-id1": {
             "az": "us-west-1a",
-            "weight": 0
+            "weight": 2
         },
         "subnet-id2": {
             "az": "us-west-1b",
-            "weight": 0
+            "weight": 4
         },
         "subnet-id3": {
             "az": "us-west-1c",
-            "weight": 0
+            "weight": 4
         },
         "subnet-id4": {
             "az": "us-west-1a",
-            "weight": 0
+            "weight": 7
         },
         "subnet-id5": {
             "az": "us-west-1a",
-            "weight": 0
+            "weight": 1
         },
         "subnet-id6": {
             "az": "us-west-1c",
-            "weight": 0
+            "weight": 4
         }
     },
     "instances": {
@@ -61,6 +61,9 @@ with open('input.json') as inputFile:
     input = json.load(inputFile)
 subnetAllocator = SubnetAllocator(input['subnets'], input['instances'])
 subnetAllocator.allocate()
+result = subnetAllocator.getResult()
+
+subnetAllocator.allocateWithWeight()
 result = subnetAllocator.getResult()
 ```
 # Testing
