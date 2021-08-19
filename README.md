@@ -2,7 +2,8 @@
 Small utility scirpt to allocate subnets into instances
 # How to use
 It can be used as a standalone script or to be imported into other script as a class
-Sample input format in json
+
+Sample input format in json:
 ```json
 {
     "subnets": {
@@ -56,7 +57,8 @@ optional arguments:
 ```python
 from subnetAllocator import SubnetAllocator
 
-input = self.readInputFile('allocatesubnet_normal.json')
+with open('input.json') as inputFile:
+    input = json.load(inputFile)
 subnetAllocator = SubnetAllocator(input['subnets'], input['instances'])
 subnetAllocator.allocate()
 result = subnetAllocator.getResult()

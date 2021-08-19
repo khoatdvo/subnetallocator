@@ -1,0 +1,10 @@
+{
+    "subnets": {
+    },
+    "instances": {
+        "instance-id1" : "us-west-1a",
+        "instance-id2" : "us-west-1b",
+        "instance-id3" : "us-west-1b",
+        "instance-id4" : "us-west-1a"
+    }
+}

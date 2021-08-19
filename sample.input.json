@@ -2,27 +2,27 @@
     "subnets": {
         "subnet-id1": {
             "az": "us-west-1a",
-            "weight": 0
+            "weight": 2
         },
         "subnet-id2": {
             "az": "us-west-1b",
-            "weight": 0
+            "weight": 5
         },
         "subnet-id3": {
             "az": "us-west-1c",
-            "weight": 0
+            "weight": 3
         },
         "subnet-id4": {
             "az": "us-west-1a",
-            "weight": 0
+            "weight": 10
         },
         "subnet-id5": {
             "az": "us-west-1a",
-            "weight": 0
+            "weight": 2
         },
         "subnet-id6": {
             "az": "us-west-1c",
-            "weight": 0
+            "weight": 1
         }
     },
     "instances": {

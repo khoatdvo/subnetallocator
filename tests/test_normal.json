@@ -1,0 +1,34 @@
+{
+    "subnets": {
+        "subnet-id1": {
+            "az": "us-west-1a",
+            "weight": 2
+        },
+        "subnet-id2": {
+            "az": "us-west-1b",
+            "weight": 5
+        },
+        "subnet-id3": {
+            "az": "us-west-1c",
+            "weight": 3
+        },
+        "subnet-id4": {
+            "az": "us-west-1a",
+            "weight": 10
+        },
+        "subnet-id5": {
+            "az": "us-west-1a",
+            "weight": 2
+        },
+        "subnet-id6": {
+            "az": "us-west-1c",
+            "weight": 1
+        }
+    },
+    "instances": {
+        "instance-id1" : "us-west-1a",
+        "instance-id2" : "us-west-1b",
+        "instance-id3" : "us-west-1b",
+        "instance-id4" : "us-west-1a"
+    }
+}
